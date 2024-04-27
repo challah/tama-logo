@@ -9,6 +9,7 @@ body {
   font-family: 'Fira Code', monospace;
   margin: 2em;
   color: #004C85;
+  font-size: 16px;
 }
 
 h1 {
@@ -33,8 +34,12 @@ h1, h2, h3 {
   margin: auto;
   padding: 0;
   /* background: #f5f5f5; */
-  width: 700px;
-  max-width: 100%;
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0 1em;
+    }
+  }
 
 }
 
@@ -55,10 +60,12 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 700px;
   max-width:80%;
-  width: 600px;
   flex-direction: column;
   grid-gap: 10px;
+
+  
 }
 
 .pixelated {
