@@ -13,7 +13,6 @@ body {
 }
 
 h1 {
-  /* font-style: italic; */
   text-align: center; 
   margin-top: 60px;
   margin-bottom: 30px;
@@ -23,7 +22,6 @@ h1, h2, h3 {
   font-weight:300;
   color: #FF3300;
 }
-
 
 .container {
   display: flex;
@@ -98,6 +96,10 @@ canvas {
   display: none;
 }
 
+#tama-svg {
+width: 100%;
+}
+
 footer {
   text-align: center;
   margin-top: 20px;
@@ -147,19 +149,6 @@ input, button {
   font-family: "Fira Code", monospace;
 }
 
-/* .pixel-button {
-  width: 176px;
-} */
-
-
-/* svg{
-  max-width: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-} */
-
 .jscolor{
   /* padding: 10px; */
   border-radius: 5px;
@@ -168,13 +157,3 @@ input, button {
   width: 100px;
 }
 
-/* .color-line{
-  margin-top: 10px;
-  text-align: center;
-}
-
-.controls{
-  display: block;
-  padding-top: 40px; 
-  text-align: center;
-} */

@@ -2,54 +2,65 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Toronto Tamagotchi Club Logo Proposals</title>
   <link rel="stylesheet"
         href="style.css">
-
+  <link rel="icon"
+        href="raccoon1.svg"
+        type="image/svg+xml">
   <script src="jscolor.min.js"></script>
-  <!-- <script src="canvg.js"></script> -->
 </head>
 
 <body>
 
   <div class="container">
     <h1>Toronto Tamagotchi Club Logo Proposals</h1>
-<p>Hello, Toronto Tamaheads! Here are some logo ideas for your consideration. There are several different variations, but I consider them one "set".</p>
+    <p>Hello, Toronto Tamaheads! Here are some logo ideas for your consideration. There are several different
+      variations, but I consider them one "set".</p>
     <h2>Character & text logos</h2>
     <div class="img-container">
-    <img src="full.svg">
-    <img src="full2.svg">
-  </div>
-  <p>I was inspired by the official art from the Connection era, which features distinct dark blue lineart with whimsically imperfect lines and flat colour.</p>
-  <p>Optionally, to match that, are some hand-drawn letters that match the character of the original Tamagotchi logo.</p>
+      <img src="full.svg">
+      <img src="full2.svg">
+    </div>
+    <p>I was inspired by the official art from the Connection era, which features distinct dark blue lineart with
+      whimsically imperfect lines and flat colour.</p>
+    <p>Optionally, to match that, are some hand-drawn letters that match the character of the original Tamagotchi logo.
+    </p>
 
     <h2>Characters only</h2>
     <div class="characters">
-    <img src="raccoon1.svg" class="raccoon"> 
-    <img src="raccoon2.svg" class="raccoon">
-  </div>
+      <img src="raccoon1.svg"
+           class="raccoon">
+      <img src="raccoon2.svg"
+           class="raccoon">
+    </div>
     <p>(They are best friends. Do not separate.)</p>
-    <p>Why raccoons? Raccoons are THE unofficial symbol of Toronto and are pretty much the city's mascots. I've designed some playful and friendly characters that intend to capture the unique spirit of our city.</p>
-    <p>I propose that the Mametchi-esque character on the left is named Churronitchi (one of the local pronunciations of Toronto is "churrono"), and the Mimitchi-esque character on the right is named Binbintchi. Open to suggestions!</p>
+    <p>Why raccoons? Raccoons are THE unofficial symbol of Toronto and are pretty much the city's mascots. I've designed
+      some playful and friendly characters that intend to capture the unique spirit of our city.</p>
+    <p>I propose that the Mametchi-esque character on the left is named Churronitchi (one of the local pronunciations of
+      Toronto is "churrono"), and the Mimitchi-esque character on the right is named Binbintchi. Open to suggestions!
+    </p>
 
     <h2>Text only variations</h2>
     <div class="img-container">
-    <img src="text.svg">
-    <img src="text2.svg">
+      <img src="text.svg">
+      <img src="text2.svg">
     </div>
 
 
     <h2>Tamagotchi variation!</h2>
-    <p>This is also a proposed logo idea, or it could be used as additional artwork. Feel free to play with the colours!</p>
+    <p>This is also a proposed logo idea, or it could be used as additional artwork. Feel free to play with the colours!
+    </p>
     <!-- colour in the tama! -->
     <svg version="1.1"
          id="tama-svg"
          xmlns="http://www.w3.org/2000/svg"
          x="0"
          y="0"
-         viewBox="0 0 1280 720"
+         viewBox="300 0 680 720"
          style="enable-background:new 0 0 1280 720"
          xml:space="preserve">
       <style>
@@ -93,8 +104,8 @@
       </g>
     </svg>
 
-    <canvas id="canvas" height=
-    "10px"></canvas>
+    <canvas id="canvas"
+            height="10px"></canvas>
     <div class="controls">
       <div class="colour-line">
         <label>Shell:</label>
@@ -160,27 +171,30 @@
         </div>
       </div>
       <div class="button-container">
-      <button id="save-button">Save Image</button>
-      </div> 
+        <button id="save-button">Save Image</button>
+      </div>
     </div>
 
     <h2>Pixel Variations!</h2>
     <p>If that wasn't enough... Here are some pixelated versions of our friends.</p>
     <div class="pixel-container">
-    <img src="raccoon1.gif" class="pixelated pixel-char"><img src="raccoon2.gif" class="pixelated pixel-char">
+      <img src="raccoon1.gif"
+           class="pixelated pixel-char"><img src="raccoon2.gif"
+           class="pixelated pixel-char">
     </div>
-    
+
     <h3>88x31 Button</h3>
     <p>And here's a button for you to add to your web ring.</p>
-    <img src="button.gif" class="pixelated pixel-button">
+    <img src="button.gif"
+         class="pixelated pixel-button">
 
-<footer>
-  Thanks <a href="https://torontotamagotchiclub.neocities.org/">Toronto Tamagotchi Club</a>!
-</footer>
+    <footer>
+      Thanks <a href="https://torontotamagotchiclub.neocities.org/">Toronto Tamagotchi Club</a>!
+    </footer>
 
   </div>
 
-  
+
 
 </body>
 
@@ -251,7 +265,7 @@
     // Get the SVG element and convert it to a string
     let svgElement = document.querySelector('#tama-svg');
     svgElement.setAttribute('width', '900');
-  svgElement.setAttribute('height', '900');
+    svgElement.setAttribute('height', '900');
     let serializer = new XMLSerializer();
     let svgString = serializer.serializeToString(svgElement);
 
@@ -267,7 +281,7 @@
     link.click();
 
     svgElement.setAttribute('width', '800');
-  svgElement.setAttribute('height', '500');
+    svgElement.setAttribute('height', '500');
   });
 
 
